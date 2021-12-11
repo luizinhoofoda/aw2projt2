@@ -1,0 +1,86 @@
+.list-email {
+	font-style: italic;
+}
+
+.list-address {
+	margin-top: -14px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+/*Form Validation Error Styles*/
+.form-group.error label,
+.form-group.error .error-message {
+	color:  red;
+}
+
+.form-group.error .form-control {
+	border: 1px solid red;
+}
+
+/*Ajax Loading*/
+.ajax-loader,
+.ajax-loader div {
+  box-sizing: border-box;
+}
+.ajax-loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.ajax-loader div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.ajax-loader div:nth-child(1) {
+  left: 8px;
+  animation: ajax-loader1 0.6s infinite;
+}
+.ajax-loader div:nth-child(2) {
+  left: 8px;
+  animation: ajax-loader2 0.6s infinite;
+}
+.ajax-loader div:nth-child(3) {
+  left: 32px;
+  animation: ajax-loader2 0.6s infinite;
+}
+.ajax-loader div:nth-child(4) {
+  left: 56px;
+  animation: ajax-loader3 0.6s infinite;
+}
+@keyframes ajax-loader1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ajax-loader3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes ajax-loader2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+.list-action-wrapper {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
